@@ -56,3 +56,9 @@ Dense Layer
 Softmax
         ↓
 PNEUMONIA / NORMAL
+```
+Dataset : https://www.kaggle.com/datasets/khoongweihao/covid19-xray-dataset-train-test-sets?select=xray_dataset_covid19
+
+Author
+
+Sreethi Manoharan
