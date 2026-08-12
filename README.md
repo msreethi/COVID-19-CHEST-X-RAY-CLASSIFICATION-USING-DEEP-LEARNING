@@ -34,26 +34,32 @@ The CNN consists of:
 | PNEUMONIA | 0 |
 | NORMAL | 1 |
 
-## 🔄 Workflow
+## 🛠️ Technologies Used
 
+- Python
+- TensorFlow
+- Keras
+- NumPy
+- Scikit-learn
+- Scikit-image
+- Matplotlib
+- Google Colab
 
-Chest X-Ray Image
-        ↓
-Image Loading
-        ↓
-Image Preprocessing
-        ↓
-Resize to 150 × 150
-        ↓
-Convolutional Layers
-        ↓
-Max Pooling
-        ↓
-Flatten
-        ↓
-Dense Layer
-        ↓
-Softmax
-        ↓
-PNEUMONIA / NORMAL
+## 📊 Model Training
 
+The model is trained using:
+
+- Optimizer: Adam
+- Loss Function: Sparse Categorical Crossentropy
+- Evaluation Metric: Accuracy
+- Epochs: 10
+- Batch Size: 20
+- Input Size: 150 × 150 × 1
+
+## 📈 Results
+
+The trained CNN achieved approximately:
+
+- 97.97% Test Accuracy
+
+The model was evaluated on the test dataset and demonstrated strong classification performance for the PNEUMONIA and NORMAL classes.
