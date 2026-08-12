@@ -34,7 +34,7 @@ The CNN model consists of:
 
 ### Output Classes
 
-```text
+
 0 → PNEUMONIA
 1 → NORMAL
 
