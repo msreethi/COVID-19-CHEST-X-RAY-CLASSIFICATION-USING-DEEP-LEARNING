@@ -1,36 +1,40 @@
-Pneumonia Detection Using CNN
+# Pneumonia Detection Using CNN
 
-A deep learning-based medical image classification project that uses a Convolutional Neural Network (CNN) to classify chest X-ray images into PNEUMONIA and NORMAL categories.
+A deep learning-based chest X-ray image classification project using a **Convolutional Neural Network (CNN)** to classify X-ray images into **PNEUMONIA** and **NORMAL** categories.
 
-🩺 Project Overview
+## 🩺 Project Overview
 
-The objective of this project is to develop a CNN model capable of analyzing chest X-ray images and automatically classifying them as either Pneumonia or Normal.
+This project uses a Convolutional Neural Network to analyze chest X-ray images and classify them into two categories:
 
-The images are preprocessed and resized to 150 × 150 × 1 before being given as input to the CNN model.
+- PNEUMONIA
+- NORMAL
 
-🎯 Objectives
-Classify chest X-ray images using deep learning.
-Detect pneumonia-related patterns in X-ray images.
-Preprocess and resize input images.
-Train a CNN model for image classification.
-Evaluate the trained model using test data.
-Predict the class of new X-ray images.
+The input images are resized to **150 × 150 pixels** and processed as grayscale images before being passed to the CNN model.
 
-🧠 CNN Architecture
+## 🎯 Objectives
 
-The model consists of:
+- Classify chest X-ray images using deep learning.
+- Detect pneumonia from chest X-ray images.
+- Preprocess and resize X-ray images.
+- Train a CNN image classification model.
+- Evaluate the model using test data.
+- Predict the class of a new X-ray image.
 
-Conv2D layer
-MaxPooling2D layer
-Conv2D layer
-MaxPooling2D layer
-Flatten layer
-Dense layer with 100 neurons
-Output Dense layer with 2 neurons
-Softmax activation
+## 🧠 Model Architecture
 
-The two output classes are:
+The CNN model consists of:
 
+- Conv2D layer
+- MaxPooling2D layer
+- Conv2D layer
+- MaxPooling2D layer
+- Flatten layer
+- Dense layer
+- Softmax output layer
+
+### Output Classes
+
+```text
 0 → PNEUMONIA
 1 → NORMAL
 
@@ -56,7 +60,8 @@ Softmax Classification
 PNEUMONIA / NORMAL
 🛠️ Technologies Used
 Python
-TensorFlow / Keras
+TensorFlow
+Keras
 NumPy
 Scikit-learn
 Scikit-image
@@ -64,40 +69,30 @@ Matplotlib
 Jupyter Notebook / Google Colab
 📊 Model Training
 
-The CNN model is trained using:
+The model is trained using:
 
 Optimizer: Adam
 Loss Function: Sparse Categorical Crossentropy
 Metric: Accuracy
 Epochs: 10
 Batch Size: 20
-
-These training settings are present in the project notebook.
-
 📈 Results
 
-The model achieved approximately:
+The CNN model achieved approximately:
 
 Test Accuracy: 97.97%
 
-The notebook's test evaluation reports a loss of approximately 0.0569 and accuracy of approximately 97.97%.
-
-The classification results show approximately 0.98 F1-score for both classes.
+The model was evaluated on the test dataset and achieved strong classification performance for the PNEUMONIA and NORMAL classes.
 
 🔍 Prediction
 
-The trained model can be used to predict a new chest X-ray image.
+The trained CNN can be used to predict a new chest X-ray image.
 
-The image is:
+The prediction process includes:
 
-Loaded.
-Resized to 150 × 150 × 1.
-Reshaped to include the batch dimension.
-Passed to the CNN.
-Classified using the class with the highest prediction probability.
-
-The notebook demonstrates prediction of a new X-ray image as NORMAL.
-
-👩‍💻 Author
-
-Sreethi Manoharan
+Loading the X-ray image.
+Resizing the image to 150 × 150 pixels.
+Reshaping the image for CNN input.
+Passing the image to the trained model.
+Obtaining prediction probabilities.
+Selecting the class with the highest probability.
