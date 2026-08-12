@@ -63,3 +63,8 @@ The trained CNN achieved approximately:
 - 97.97% Test Accuracy
 
 The model was evaluated on the test dataset and demonstrated strong classification performance for the PNEUMONIA and NORMAL classes.
+Dataset: https://www.kaggle.com/datasets/khoongweihao/covid19-xray-dataset-train-test-sets?select=xray_dataset_covid19
+
+## 👩‍💻 Author
+
+Sreethi Manoharan
